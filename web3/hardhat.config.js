@@ -12,11 +12,10 @@ module.exports = {
     },
   },
   networks: {
-    zksync_testnet: {
-      url: "https://zksync2-testnet.zksync.dev",
-      ethNetwork: "goerli",
-      chainId: 280,
-      zksync: true,
+    hardhat:{},
+    goerli:{
+     url: 'https://rpc.ankr.com/eth_goerli',
+     accounts: [`ox${process.env.PRIVATE_KEY}`]
     },
     zksync_mainnet: {
       url: "https://zksync2-mainnet.zksync.io/",
